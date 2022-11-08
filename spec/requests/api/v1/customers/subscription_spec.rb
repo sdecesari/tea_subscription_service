@@ -21,7 +21,7 @@ RSpec.describe 'Create Subscription' do
       expect(response.status).to eq(201)
 
       result = JSON.parse(response.body, symbolize_names: true)
-      # binding.pry
+
       expect(result).to have_key(:data)
       expect(result[:data]).to have_key(:id)
       expect(result[:data]).to have_key(:type)
