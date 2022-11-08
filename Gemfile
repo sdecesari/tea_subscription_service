@@ -45,13 +45,16 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'rspec-rails'
-  gem 'shoulda-matchers'
   gem 'capybara'
   gem 'simplecov'
   gem 'orderly'
   gem 'launchy'
   gem 'vcr'
   gem 'webmock'
+end
+
+group :test do
+  gem 'shoulda-matchers'
 end
 
 
