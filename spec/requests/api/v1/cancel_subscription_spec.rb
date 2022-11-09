@@ -5,7 +5,7 @@ RSpec.describe 'Cancel Subscription' do
     it 'can cancel a subscription' do 
       customer = Customer.create!(first_name: 'shirley', last_name: 'decesari', email: 'shirley@me.com', address: 'a place')
       tea = Tea.create!(title: 'green tea', description: 'it is green', temperature: 140, brew_time: '2 minutes')
-      subscription = customer.subscriptions.create!(title: 'green tead subscription', price: 18.00, frequency: 'weekly', status: 'active', tea_id: tea.id, customer_id: customer.id)
+      subscription = customer.subscriptions.create!(title: 'green tea subscription', price: 18.00, frequency: 'weekly', status: 'active', tea_id: tea.id, customer_id: customer.id)
       cancel_params = {
         subscription_id: subscription.id,
         status: 'inactive'
@@ -39,7 +39,7 @@ RSpec.describe 'Cancel Subscription' do
     it 'returns an error when params are missing' do 
       customer = Customer.create!(first_name: 'shirley', last_name: 'decesari', email: 'shirley@me.com', address: 'a place')
       tea = Tea.create!(title: 'green tea', description: 'it is green', temperature: 140, brew_time: '2 minutes')
-      subscription = customer.subscriptions.create!(title: 'green tead subscription', price: 18.00, frequency: 'weekly', status: 'active', tea_id: tea.id, customer_id: customer.id)
+      subscription = customer.subscriptions.create!(title: 'green tea subscription', price: 18.00, frequency: 'weekly', status: 'active', tea_id: tea.id, customer_id: customer.id)
       cancel_params = {
         subscription_id: subscription.id,
         status: ''
