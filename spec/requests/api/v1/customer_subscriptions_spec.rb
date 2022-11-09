@@ -13,7 +13,12 @@ RSpec.describe 'Get All Subscriptions' do
 
       expect(response).to be_successful
       expect(response.status).to eq(200)
-      # binding.pry
     end
   end 
+
+  describe 'sad path' do 
+    it '' do 
+
+    end
+  end
 end 
