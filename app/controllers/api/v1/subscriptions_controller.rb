@@ -21,6 +21,15 @@ class Api::V1::SubscriptionsController < ApplicationController
     end
   end
 
+  def index 
+    customer = Customer.find(params[:customer_id])
+    if customer.subscriptions.empty? == false
+      render json: CustomerSerializer.new(customer)
+    else
+      render json: { error: subscription.errors.full_messages.to_sentence }, status: 400
+    end
+  end
+
   private
   def sub_params
     params.permit(:title, :price, :status, :frequency, :tea_id, :customer_id)
