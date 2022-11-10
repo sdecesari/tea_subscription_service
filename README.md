@@ -44,9 +44,9 @@ To set up the project on your local machine, complete the following steps:
 <!-- API Endpoints -->
 ## API Endpoints
 #### Create a Tea Subscription for a Customer
-![Screen Shot 2022-11-10 at 8 23 30 AM](https://user-images.githubusercontent.com/99003546/201150634-ce39bd54-4a3f-4b55-825a-491e43ec465d.png)<br>
+![Screen Shot 2022-11-10 at 8 40 36 AM](https://user-images.githubusercontent.com/99003546/201154648-75da2340-5939-453f-a66a-17beda3a8441.png)<br>
 #### Cancel a Tea Subscription for a Customer
-![Screen Shot 2022-11-10 at 8 28 10 AM](https://user-images.githubusercontent.com/99003546/201151798-3d00f0a4-b5d0-41d2-ad8c-95a2e96629e2.png)<br>
+![Screen Shot 2022-11-10 at 8 40 02 AM](https://user-images.githubusercontent.com/99003546/201154520-2e22099c-12d5-48a1-84bf-21423a7754fe.png)<br>
 #### See all Customers Active and Inactive Subscriptions
 ![Screen Shot 2022-11-10 at 8 26 42 AM](https://user-images.githubusercontent.com/99003546/201151476-c99f8bda-fec1-47af-a0b9-82c53d1b7d2e.png)
  
