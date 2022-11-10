@@ -11,7 +11,7 @@ class Api::V1::SubscriptionsController < ApplicationController
   def update
     subscription = Subscription.find(params[:subscription_id])
     if params[:status] == "inactive"
-      subscription.update_attribute(:status, 1)
+      subscription.update_attribute(:status, 'inactive')
       render json: SubscriptionSerializer.new(subscription), status: 200
     elsif params[:status] == "active"
       subscription.update(sub_params)
