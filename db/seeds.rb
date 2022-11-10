@@ -18,4 +18,4 @@ subscription1 = customer1.subscriptions.create!(title: 'green tea subscription',
 subscription2 = customer1.subscriptions.create!(title: 'black tea subscription', price: 10.00, frequency: 'monthly', status: 'active', tea_id: tea2.id, customer_id: customer1.id)
 subscription3 = customer2.subscriptions.create!(title: 'black tea subscription', price: 10.00, frequency: 'monthly', status: 'active', tea_id: tea2.id, customer_id: customer2.id)
 subscription4 = customer2.subscriptions.create!(title: 'oolong tea subscription', price: 20.00, frequency: 'weekly', status: 'active', tea_id: tea3.id, customer_id: customer2.id)
-subscription5 = customer2.subscriptions.create!(title: 'sleepytime tea subscription', price: 20.00, frequency: 'weekly', status: 'active', tea_id: tea4.id, customer_id: customer2.id)
+subscription5 = customer2.subscriptions.create!(title: 'sleepytime tea subscription', price: 20.00, frequency: 'weekly', status: 'inactive', tea_id: tea4.id, customer_id: customer2.id)
