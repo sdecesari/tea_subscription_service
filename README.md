@@ -10,6 +10,7 @@
     <li><a href="#setup">Setup</a></li>
     <li><a href="#schema">Schema</a></li>
     <li><a href="#api-endpoints">API Endpoints</a></li>
+    <li><a href="#error-handling">Error Handling</a></li>
   </ol>
 </details>
 
@@ -43,32 +44,15 @@ To set up the project on your local machine, complete the following steps:
 <!-- API Endpoints -->
 ## API Endpoints
 #### Create a Tea Subscription for a Customer
-`POST /api/v1/customers/1/subscribe`<br
-```
-"data": {
-   "id": 1,
-   "type": "subscription",
-   "attributes": {
-       "title": "green tea subscription",
-       "price": 10.00,
-       "status": "active",
-       "frequency": "weekly"
-       }
-     }
-```
-`PATCH /api/v1/customers/1/cancel`<br>
-```
-"data": {
-   "id": 1,
-   "type": "subscription",
-   "attributes": {
-       "title": "green tea subscription",
-       "price": 10.00,
-       "status": "active",
-       "frequency": "weekly"
-       }
-     }
-```
-`GET /api/v1/customers/1/subscriptions`<br>
-<br>![Screen Shot 2022-11-08 at 5 39 47 PM](https://user-images.githubusercontent.com/99003546/200715638-0246607a-acb2-4a4d-9b9a-b5b2a3870e3d.png)
-  
+![Screen Shot 2022-11-10 at 8 23 30 AM](https://user-images.githubusercontent.com/99003546/201150634-ce39bd54-4a3f-4b55-825a-491e43ec465d.png)<br>
+#### Cancel a Tea Subscription for a Customer
+![Screen Shot 2022-11-10 at 8 28 10 AM](https://user-images.githubusercontent.com/99003546/201151798-3d00f0a4-b5d0-41d2-ad8c-95a2e96629e2.png)<br>
+#### See all Customers Active and Inactive Subscriptions
+![Screen Shot 2022-11-10 at 8 26 42 AM](https://user-images.githubusercontent.com/99003546/201151476-c99f8bda-fec1-47af-a0b9-82c53d1b7d2e.png)
+ 
+<!-- Error Handling -->
+## Error Handling
+#### Subscription cannot be made if any params are missing
+![Screen Shot 2022-11-10 at 8 29 43 AM](https://user-images.githubusercontent.com/99003546/201152225-b7f350ae-0fad-4c16-a5f1-3bebd29dacc8.png)<br>
+#### Subscription cannot be canceled if any params are missing
+![Screen Shot 2022-11-10 at 8 32 40 AM](https://user-images.githubusercontent.com/99003546/201152906-1ac04655-5578-40e3-bf15-a0e9637c96eb.png)<br>
